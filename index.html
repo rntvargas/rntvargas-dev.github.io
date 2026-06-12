@@ -1,242 +1,431 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M.Sc. Romel Percy Melgarejo Bolivar | Perfil Profesional Ampliado</title>
-    <style>
-        :root {
-            --primary: #1e3a8a;
-            --secondary: #0284c7;
-            --dark: #1f2937;
-            --light: #f3f4f6;
-            --white: #ffffff;
-        }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--dark);
-            background-color: var(--light);
-            line-height: 1.6;
-        }
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: var(--white);
-            padding: 3.5rem 1rem 3rem 1rem;
-            text-align: center;
-            position: relative;
-        }
-        .header-content {
-            max-width: 900px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5rem;
-        }
-        @media (min-width: 600px) {
-            .header-content {
-                flex-direction: row;
-                text-align: left;
-                justify-content: center;
-            }
-        }
-        .profile-photo {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            border: 4px solid var(--white);
-            object-fit: cover;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-            background-color: #e5e7eb;
-        }
-        .header-text h1 {
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-            letter-spacing: -0.025em;
-        }
-        .header-text p {
-            font-size: 1.15rem;
-            opacity: 0.95;
-        }
-        .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        section {
-            background-color: var(--white);
-            padding: 1.8rem;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        h2 {
-            color: var(--primary);
-            border-bottom: 2px solid var(--secondary);
-            padding-bottom: 0.3rem;
-            margin-bottom: 1.2rem;
-            font-size: 1.4rem;
-            display: flex;
-            align-items: center;
-        }
-        ul {
-            list-style-type: none;
-        }
-        li {
-            margin-bottom: 1rem;
-            padding-left: 1.4rem;
-            position: relative;
-        }
-        li::before {
-            content: "▹";
-            position: absolute;
-            left: 0;
-            color: var(--secondary);
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-        .badge {
-            background-color: #e0f2fe;
-            color: #0369a1;
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 0.3rem;
-        }
-        .project-title {
-            font-weight: bold;
-            color: var(--dark);
-        }
-        .pub-authors {
-            font-size: 0.9rem;
-            color: #4b5563;
-            font-style: italic;
-        }
-        .pub-meta {
-            font-size: 0.85rem;
-            color: #6b7280;
-            margin-top: 0.1rem;
-        }
-        footer {
-            text-align: center;
-            padding: 2.5rem;
-            font-size: 0.9rem;
-            color: #6b7280;
-            border-top: 1px solid #e5e7eb;
-        }
-        .links-investigador {
-            margin-top: 0.8rem;
-        }
-        .links-investigador a {
-            color: var(--white);
-            text-decoration: underline;
-            margin: 0 0.5rem;
-            font-size: 0.9rem;
-            opacity: 0.85;
-        }
-        .links-investigador a:hover {
-            opacity: 1;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CV y portafolio web de Renato Quispe Vargas, estudiante de Estadística e Informática con enfoque en investigación, ciencia de datos, econometría y sistemas Linux." />
+  <title>Renato Quispe Vargas | CV Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&f[]=zodiak@400,700&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
+      --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem;
+      --space-12: 3rem; --space-16: 4rem; --space-20: 5rem;
+      --color-bg: #f7f6f2; --color-surface: #f9f8f5; --color-surface-2: #fbfbf9;
+      --color-surface-offset: #f0ede8; --color-border: #d4d1ca; --color-divider: #dedad4;
+      --color-text: #23201b; --color-text-muted: #6f6b65; --color-text-faint: #a39f98;
+      --color-text-inverse: #f9f8f4; --color-primary: #01696f; --color-primary-hover: #0c4e54;
+      --color-primary-soft: #dcebea; --color-success: #437a22; --color-orange: #da7101;
+      --shadow-sm: 0 1px 2px rgba(34, 30, 23, 0.06); --shadow-md: 0 10px 30px rgba(34, 30, 23, 0.08);
+      --radius-sm: 0.5rem; --radius-md: 0.8rem; --radius-lg: 1.2rem; --radius-xl: 1.6rem;
+      --font-body: 'Satoshi', Inter, sans-serif; --font-display: 'Zodiak', Georgia, serif;
+      --content: 1160px;
+    }
+    [data-theme="dark"] {
+      --color-bg: #141311; --color-surface: #1b1917; --color-surface-2: #211f1c;
+      --color-surface-offset: #27231f; --color-border: #37332f; --color-divider: #2e2a27;
+      --color-text: #e5e2dc; --color-text-muted: #ada8a1; --color-text-faint: #7f7a73;
+      --color-text-inverse: #161513; --color-primary: #57a7af; --color-primary-hover: #7fc2c8;
+      --color-primary-soft: #223335; --color-success: #7fb45a; --color-orange: #ffb15d;
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.18); --shadow-md: 0 16px 40px rgba(0, 0, 0, 0.26);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme]) {
+        --color-bg: #141311; --color-surface: #1b1917; --color-surface-2: #211f1c;
+        --color-surface-offset: #27231f; --color-border: #37332f; --color-divider: #2e2a27;
+        --color-text: #e5e2dc; --color-text-muted: #ada8a1; --color-text-faint: #7f7a73;
+        --color-text-inverse: #161513; --color-primary: #57a7af; --color-primary-hover: #7fc2c8;
+        --color-primary-soft: #223335; --color-success: #7fb45a; --color-orange: #ffb15d;
+      }
+    }
+    * , *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      min-height: 100vh; background: radial-gradient(circle at top right, rgba(1,105,111,0.08), transparent 30%), var(--color-bg);
+      color: var(--color-text); font-family: var(--font-body); font-size: var(--text-base); line-height: 1.65;
+    }
+    img, svg { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; border: 0; background: none; cursor: pointer; }
+    :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
+    .skip-link {
+      position: absolute; left: var(--space-4); top: -3rem; background: var(--color-primary); color: var(--color-text-inverse);
+      padding: var(--space-3) var(--space-4); border-radius: var(--radius-sm); z-index: 100;
+    }
+    .skip-link:focus { top: var(--space-4); }
+    .container { width: min(calc(100% - 2rem), var(--content)); margin-inline: auto; }
+    .site-header {
+      position: sticky; top: 0; z-index: 20; backdrop-filter: blur(16px);
+      background: color-mix(in srgb, var(--color-bg) 84%, transparent); border-bottom: 1px solid var(--color-divider);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); padding: var(--space-4) 0; }
+    .brand { display: flex; align-items: center; gap: var(--space-3); font-weight: 700; }
+    .brand-mark {
+      width: 2.6rem; height: 2.6rem; border-radius: 0.9rem; display: grid; place-items: center;
+      background: linear-gradient(135deg, var(--color-primary-soft), var(--color-surface-offset)); border: 1px solid var(--color-border);
+      color: var(--color-primary);
+    }
+    .brand span { font-size: var(--text-sm); letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-text-muted); }
+    .nav-links { display: flex; align-items: center; gap: var(--space-4); flex-wrap: wrap; }
+    .nav-links a { font-size: var(--text-sm); color: var(--color-text-muted); }
+    .nav-links a:hover { color: var(--color-text); }
+    .theme-toggle {
+      width: 2.8rem; height: 2.8rem; border-radius: 999px; border: 1px solid var(--color-border); background: var(--color-surface);
+      display: grid; place-items: center; box-shadow: var(--shadow-sm);
+    }
+    main section { padding: clamp(var(--space-12), 8vw, var(--space-20)) 0; }
+    .hero { padding-top: var(--space-16); }
+    .hero-grid { display: grid; grid-template-columns: 1.35fr 0.9fr; gap: var(--space-8); align-items: stretch; }
+    .hero-copy, .hero-side, .card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); }
+    .hero-copy { padding: clamp(var(--space-6), 4vw, var(--space-12)); }
+    .eyebrow {
+      display: inline-flex; gap: var(--space-2); align-items: center; padding: var(--space-2) var(--space-3); border-radius: 999px;
+      background: var(--color-primary-soft); color: var(--color-primary); font-size: var(--text-xs); letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700;
+    }
+    h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; }
+    h1 { font-size: var(--text-2xl); margin-top: var(--space-5); max-width: 11ch; }
+    .lead { margin-top: var(--space-5); max-width: 62ch; color: var(--color-text-muted); }
+    .hero-actions, .chips, .meta-list, .social-links { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+    .hero-actions { margin-top: var(--space-6); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); min-height: 46px; padding: 0 var(--space-5);
+      border-radius: 999px; border: 1px solid transparent; transition: 180ms ease;
+    }
+    .btn-primary { background: var(--color-primary); color: var(--color-text-inverse); }
+    .btn-primary:hover { background: var(--color-primary-hover); }
+    .btn-secondary { border-color: var(--color-border); background: var(--color-surface-2); }
+    .btn-secondary:hover { background: var(--color-surface-offset); }
+    .chips { margin-top: var(--space-6); }
+    .chip {
+      padding: var(--space-2) var(--space-3); border-radius: 999px; background: var(--color-surface-offset); color: var(--color-text-muted);
+      font-size: var(--text-xs); border: 1px solid var(--color-divider);
+    }
+    .hero-side { padding: var(--space-6); display: grid; gap: var(--space-4); }
+    .stat-block { padding: var(--space-4); border-radius: var(--radius-lg); background: var(--color-surface-2); border: 1px solid var(--color-divider); }
+    .stat-label { font-size: var(--text-xs); color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.08em; }
+    .stat-value { font-size: var(--text-xl); font-weight: 800; margin-top: var(--space-2); }
+    .section-head { display: flex; justify-content: space-between; gap: var(--space-4); align-items: end; margin-bottom: var(--space-8); }
+    .section-head p { max-width: 60ch; color: var(--color-text-muted); }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-6); }
+    .card { padding: var(--space-6); }
+    .card h3 { font-size: var(--text-lg); margin-bottom: var(--space-3); }
+    .muted { color: var(--color-text-muted); }
+    .timeline { display: grid; gap: var(--space-4); }
+    .timeline-item {
+      position: relative; padding: var(--space-5); border-radius: var(--radius-lg); background: var(--color-surface);
+      border: 1px solid var(--color-border);
+    }
+    .timeline-item::before {
+      content: ""; position: absolute; left: 0; top: var(--space-5); bottom: var(--space-5); width: 3px; border-radius: 999px; background: var(--color-primary);
+    }
+    .timeline-item h3, .project-card h3 { padding-left: var(--space-4); }
+    .timeline-item p, .timeline-item ul, .project-card p { padding-left: var(--space-4); }
+    ul.clean { list-style: none; display: grid; gap: var(--space-2); }
+    .skills-grid, .projects-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-5); }
+    .skill-group, .project-card {
+      background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-5);
+    }
+    .skill-group h3, .project-card h3 { margin-bottom: var(--space-3); font-size: var(--text-lg); }
+    .project-meta { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: var(--space-4) 0; }
+    .project-meta span { font-size: var(--text-xs); padding: var(--space-2) var(--space-3); border-radius: 999px; background: var(--color-primary-soft); color: var(--color-primary); }
+    .contact-panel {
+      display: grid; grid-template-columns: 1.1fr 0.9fr; gap: var(--space-6); padding: var(--space-6);
+      background: linear-gradient(180deg, var(--color-surface), var(--color-surface-2)); border: 1px solid var(--color-border); border-radius: var(--radius-xl);
+    }
+    .contact-list { display: grid; gap: var(--space-3); }
+    .contact-item { padding: var(--space-4); border-radius: var(--radius-lg); background: var(--color-surface-offset); border: 1px solid var(--color-divider); }
+    .footer { padding: var(--space-8) 0 var(--space-12); color: var(--color-text-muted); }
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    @media (max-width: 980px) {
+      .hero-grid, .grid-2, .skills-grid, .projects-grid, .contact-panel { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+    }
+    @media (max-width: 720px) {
+      .nav { align-items: start; flex-direction: column; }
+      .nav-links { width: 100%; justify-content: space-between; }
+      h1 { max-width: 100%; }
+      .hero-copy, .hero-side, .card, .contact-panel { padding: var(--space-5); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
+  </style>
 </head>
 <body>
-
-    <header>
-        <div class="header-content">
-            <!-- Foto de Investigador enlazada directamente desde el repositorio oficial CTI Vitae del CONCYTEC -->
-            <img src="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=67043" alt="M.Sc. Romel Percy Melgarejo Bolivar" class="profile-photo">
-            <div class="header-text">
-                <h1>M.Sc. Romel Percy Melgarejo Bolivar</h1>
-                <p>Docente Universitario | Especialista en TI, Ciencia de Datos e Ingeniería Estadística e Informática</p>
-                <div class="links-investigador">
-                    <a href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=67043" target="_blank">Ficha Concytec</a> | 
-                    <a href="https://scholar.google.com/citations?user=G5veeOIAAAAJ" target="_blank">Google Académico</a>
-                </div>
-            </div>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 24V8h7.5c4.5 0 7.5 2.4 7.5 6.4 0 4.1-3 6.6-7.5 6.6H11.8V24H7Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11.8 18.2h2.4c2.4 0 4.1-1.1 4.1-3.7 0-2.3-1.7-3.4-4.1-3.4h-2.4v7.1Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <div>
+          <strong>Renato Quispe Vargas</strong>
+          <span>CV web / portfolio</span>
         </div>
-    </header>
+      </a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#perfil">Perfil</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
 
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <article class="hero-copy reveal">
+          <div class="eyebrow">Estadística + informática + investigación</div>
+          <h1>Construyo soluciones académicas y técnicas con datos, código y criterio.</h1>
+          <p class="lead">Soy Renato Quispe Vargas, estudiante de Estadística e Informática en Puno. Mi trabajo combina análisis estadístico, econometría, series de tiempo, automatización con Python y entornos Linux para resolver problemas reales en investigación y desarrollo técnico.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Contactarme</a>
+            <a class="btn btn-secondary" href="#proyectos">Ver proyectos</a>
+          </div>
+          <div class="chips" aria-label="Áreas clave">
+            <span class="chip">Python</span>
+            <span class="chip">R / EViews</span>
+            <span class="chip">Series de tiempo</span>
+            <span class="chip">Linux / Bash</span>
+            <span class="chip">LaTeX</span>
+            <span class="chip">Investigación</span>
+          </div>
+        </article>
+        <aside class="hero-side reveal">
+          <div class="stat-block">
+            <div class="stat-label">Enfoque</div>
+            <div class="stat-value">Data + Research</div>
+            <p class="muted">Perfil orientado a análisis cuantitativo, redacción académica y desarrollo técnico.</p>
+          </div>
+          <div class="stat-block">
+            <div class="stat-label">Formación</div>
+            <div class="stat-value">UNA Puno</div>
+            <p class="muted">Estudiante de Estadística e Informática con preferencia por el área informática.</p>
+          </div>
+          <div class="stat-block">
+            <div class="stat-label">Identidad académica</div>
+            <div class="stat-value">ORCID</div>
+            <p class="muted">0009-0005-2367-7852</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="perfil">
+      <div class="container grid-2">
+        <article class="card reveal">
+          <h2>Perfil</h2>
+          <p class="muted">Estudiante universitario con experiencia en análisis de datos, desarrollo de aplicaciones para investigación, modelado estadístico y automatización de procesos. Me interesa crear soluciones claras, reproducibles y bien documentadas, tanto para entornos académicos como para proyectos técnicos.</p>
+        </article>
+        <article class="card reveal">
+          <h2>Fortalezas</h2>
+          <ul class="clean muted">
+            <li>Análisis de series de tiempo, regresión y econometría aplicada.</li>
+            <li>Desarrollo con Python, R, Bash y herramientas estadísticas.</li>
+            <li>Trabajo académico con LaTeX, visualización y estructura de papers.</li>
+            <li>Experiencia con Linux, automatización y configuración técnica.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Experiencia y formación</h2>
+          </div>
+          <p>He reunido experiencia en investigación aplicada, desarrollo de prototipos, análisis estadístico y construcción de herramientas orientadas a cursos, papers y sistemas académicos.</p>
+        </div>
+        <div class="timeline reveal">
+          <article class="timeline-item">
+            <h3>Investigación académica y análisis estadístico</h3>
+            <p class="muted">Desarrollo de modelos estadísticos y econométricos para trabajos académicos, con uso de R, EViews y Python para limpieza, exploración, modelado y validación.</p>
+          </article>
+          <article class="timeline-item">
+            <h3>Aplicaciones para investigación y prototipos</h3>
+            <p class="muted">Diseño de aplicaciones y flujos de trabajo para papers y proyectos universitarios, incluyendo componentes en R Shiny, procesamiento de datos y automatización de tareas.</p>
+          </article>
+          <article class="timeline-item">
+            <h3>Universidad Nacional del Altiplano / Puno</h3>
+            <p class="muted">Formación en Estadística e Informática, con interés especial en informática, ciencia de datos, sistemas y análisis cuantitativo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Proyectos destacados</h2>
+          </div>
+          <p>Estos bloques están listos para que luego reemplaces los textos por enlaces reales de GitHub, demos, papers o capturas de tus proyectos más fuertes.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <h3>Sistema de asistencia con QR</h3>
+            <p class="muted">Prototipo de sistema con panel administrativo y registro de asistencia mediante códigos QR, pensado para control académico y automatización de procesos.</p>
+            <div class="project-meta"><span>Python</span><span>QR</span><span>Admin UI</span></div>
+          </article>
+          <article class="project-card reveal">
+            <h3>Aplicaciones Shiny para investigación</h3>
+            <p class="muted">Desarrollo de componentes y depuración de aplicaciones R Shiny orientadas a visualización, análisis y soporte para artículos científicos.</p>
+            <div class="project-meta"><span>R Shiny</span><span>Research</span><span>Data Apps</span></div>
+          </article>
+          <article class="project-card reveal">
+            <h3>Modelos de churn y regresión logística</h3>
+            <p class="muted">Análisis de datos con regresión logística, selección de variables y evaluación de significancia para conjuntos de datos aplicados.</p>
+            <div class="project-meta"><span>R</span><span>Logit</span><span>Modeling</span></div>
+          </article>
+          <article class="project-card reveal">
+            <h3>Series de tiempo y econometría</h3>
+            <p class="muted">Exploración de tendencia, estacionalidad, ARIMA, volatilidad y otras técnicas para cursos y proyectos de análisis temporal.</p>
+            <div class="project-meta"><span>ARIMA</span><span>GARCH</span><span>EViews</span></div>
+          </article>
+          <article class="project-card reveal">
+            <h3>Procesamiento y automatización con Python</h3>
+            <p class="muted">Scripts y flujos de trabajo para limpieza de datos, procesamiento de imágenes y tareas repetitivas en entornos académicos y técnicos.</p>
+            <div class="project-meta"><span>Python</span><span>Automation</span><span>CLI</span></div>
+          </article>
+          <article class="project-card reveal">
+            <h3>Documentos científicos en LaTeX</h3>
+            <p class="muted">Preparación y estructura de manuscritos, tablas, fórmulas y formatos orientados a publicaciones y entregables académicos.</p>
+            <div class="project-meta"><span>LaTeX</span><span>Papers</span><span>Academic Writing</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Habilidades</h2>
+          </div>
+          <p>La estructura separa análisis, desarrollo, herramientas y producción académica para que tu perfil se vea especializado y no como una lista genérica.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-group reveal">
+            <h3>Análisis y modelado</h3>
+            <ul class="clean muted">
+              <li>Estadística inferencial</li>
+              <li>Regresión lineal y logística</li>
+              <li>Series de tiempo</li>
+              <li>Econometría aplicada</li>
+              <li>Visualización de datos</li>
+            </ul>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Desarrollo y sistemas</h3>
+            <ul class="clean muted">
+              <li>Python</li>
+              <li>R</li>
+              <li>Bash / Shell</li>
+              <li>Go</li>
+              <li>Linux / Kali / WSL</li>
+            </ul>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Herramientas</h3>
+            <ul class="clean muted">
+              <li>EViews</li>
+              <li>SPSS</li>
+              <li>RStudio</li>
+              <li>Git / GitHub</li>
+              <li>LaTeX / Overleaf</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div>
+            <div class="eyebrow">Contacto</div>
+            <h2 style="margin-top:1rem;">Disponible para proyectos, investigación y oportunidades académicas.</h2>
+            <p class="lead" style="margin-top:1rem;">Este CV ya está listo para GitHub Pages. Solo faltará reemplazar tus enlaces reales, correo, teléfono y, si quieres, agregar una foto profesional o tus repositorios principales.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="mailto:tu-correo@ejemplo.com">Enviar correo</a>
+              <a class="btn btn-secondary" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+          <div class="contact-list">
+            <div class="contact-item">
+              <strong>Nombre</strong>
+              <p class="muted">Renato Quispe Vargas</p>
+            </div>
+            <div class="contact-item">
+              <strong>Ubicación</strong>
+              <p class="muted">Puno, Perú</p>
+            </div>
+            <div class="contact-item">
+              <strong>ORCID</strong>
+              <p class="muted">0009-0005-2367-7852</p>
+            </div>
+            <div class="contact-item">
+              <strong>Enlaces pendientes de personalizar</strong>
+              <p class="muted">Correo, GitHub, LinkedIn, CV PDF y repositorios principales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
     <div class="container">
-        
-        <section id="sobre-mi">
-            <h2>Resumen Profesional</h2>
-            <p>Magíster Scientiae en Informática con mención en Gerencia de Tecnologías de Información y Comunicaciones por la Universidad Nacional del Altiplano. Profesional especializado en Ciencia de Datos, redes telemáticas, analítica probabilística y desarrollo avanzado de software. Cuenta con un destacado historial de registro de propiedad intelectual ante INDECOPI, liderazgo gremial y publicaciones científicas indexadas globalmente.</p>
-        </section>
+      <p>© 2026 Renato Quispe Vargas. Diseñado para GitHub Pages con HTML, CSS y JavaScript.</p>
+    </div>
+  </footer>
 
-        <section id="educacion">
-            <h2>Formación Académica</h2>
-            <ul>
-                <li>
-                    <strong>Magíster Scientiae en Informática</strong><br>
-                    Mención en Gerencia de Tecnologías de Información y Comunicaciones — Universidad Nacional del Altiplano
-                </li>
-                <li>
-                    <strong>Ingeniero Estadístico e Informático</strong><br>
-                    Título Profesional — Universidad Nacional del Altiplano
-                </li>
-                <li>
-                    <strong>Estudios de Especialización Tecnológica (En curso)</strong><br>
-                    Mecatrónica Automotriz — Instituto Superior Tecnológico José Antonio Encinas (Puno)
-                </li>
-            </ul>
-        </section>
+  <script>
+    const toggle = document.querySelector('[data-theme-toggle]');
+    const root = document.documentElement;
+    let currentTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    root.setAttribute('data-theme', currentTheme);
+    const icons = {
+      dark: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>',
+      light: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+    };
+    const paintToggle = () => {
+      toggle.innerHTML = currentTheme === 'dark' ? icons.light : icons.dark;
+      toggle.setAttribute('aria-label', currentTheme === 'dark' ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro');
+    };
+    paintToggle();
+    toggle.addEventListener('click', () => {
+      currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', currentTheme);
+      paintToggle();
+    });
 
-        <section id="experiencia">
-            <h2>Experiencia Destacada</h2>
-            <ul>
-                <li>
-                    <strong>Docente Universitario e Investigador</strong> — Universidad Nacional del Altiplano Puno<br>
-                    <span class="badge">2020 - Actualidad</span>
-                </li>
-                <li>
-                    <strong>Presidente del Capítulo de Ingenieros Estadísticos e Informáticos</strong> — Colegio de Ingenieros del Perú (CD Puno)<br>
-                    <span class="badge">2022 - Actualidad</span>
-                </li>
-                <li>
-                    <strong>Docente Auxiliar Ordinario</strong> — Universidad Nacional de Moquegua<br>
-                    <span class="badge">2015</span>
-                </li>
-                <li>
-                    <strong>Instructor Técnico</strong> — Instituto de Informática de la UNA Puno<br>
-                    <span class="badge">2016</span>
-                </li>
-            </ul>
-        </section>
-
-        <section id="investigacion">
-            <h2>Producción Científica y Publicaciones</h2>
-            <ul>
-                <li>
-                    <strong>Artículo de Revista Internacional Indexada (2022):</strong><br>
-                    <span class="project-title">"A Lightweight Hybrid Dilated Ghost Model-Based Approach for the Prognosis of Breast Cancer"</span>
-                    <div class="pub-authors">E. Ramirez-Asis, R. P. Melgarejo Bolivar, L. A. Gonzales, S. Chaudhury, R. Kashyap, etc.</div>
-                    <div class="pub-meta">Revista: <em>Computational Intelligence and Neuroscience</em> | DOI: 10.1155/2022/9325452</div>
-                </li>
-                <li>
-                    <strong>Capítulo de Libro Técnico (2023):</strong><br>
-                    <span class="project-title">"Predicción de diabetes en mujeres mediante un modelo probabilístico basado en Redes Bayesianas"</span>
-                    <div class="pub-authors">Romel Percy Melgarejo Bolivar</div>
-                    <div class="pub-meta">Libro: <em>O Cuidado em Saúde Baseado em Evidências</em> | DOI: 10.37885/230412748</div>
-                </li>
-                <li>
-                    <strong>Artículo de Revista de Posgrado (2022):</strong><br>
-                    <span class="project-title">"Arquitectura pervasiva con tecnologías WebRTC híbridas para el desarrollo de un framework Modelo Vista Controlador de tiempo real"</span>
-                    <div class="pub-authors">Ramiro Pedro Laura Murillo, Romel Percy Melgarejo Bolivar</div>
-                    <div class="pub-meta">Revista: <em>Revista de Investigaciones de la Escuela de Posgrado UNA</em> | DOI: 10.26788/riepg.v9i4.1632</div>
-                </li>
-                <li>
-                    <strong>Libro / Monografía Académica (2015):</strong><br>
-                    <span class="project-title">"Red Privada Virtual para la Prestación de Servicios Multimedia en el Campus Universitario de la Universidad Nacional del Altiplano"</span>
-                    <div class="pub-meta">Repositorio Institucional UNA Puno | Código de Biblioteca: Facultad de Ingeniería Estadística e Informática</div>
-                </li>
-                <li>
-                    <strong>Artículo de Investigación en Ciencias Sociales (2019):</strong><br>
-                    <span class="project-title">"La comunicación interna en los trabajadores administrativos de la UNA Puno"</span>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('is-visible');
+      });
+    }, { threshold: 0.14 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
