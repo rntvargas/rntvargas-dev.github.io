@@ -3,176 +3,348 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M.Sc. Romel Percy Melgarejo Bolivar | Perfil Profesional</title>
-    <style>
-        :root {
-            --primary: #1e3a8a;
-            --secondary: #0284c7;
-            --dark: #1f2937;
-            --light: #f3f4f6;
-            --white: #ffffff;
-        }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--dark);
-            background-color: var(--light);
-            line-height: 1.6;
-        }
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: var(--white);
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-        }
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        section {
-            background-color: var(--white);
-            padding: 1.8rem;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        h2 {
-            color: var(--primary);
-            border-bottom: 2px solid var(--secondary);
-            padding-bottom: 0.3rem;
-            margin-bottom: 1rem;
-            font-size: 1.4rem;
-        }
-        ul {
-            list-style-type: none;
-        }
-        li {
-            margin-bottom: 0.8rem;
-            padding-left: 1.2rem;
-            position: relative;
-        }
-        li::before {
-            content: "▹";
-            position: absolute;
-            left: 0;
-            color: var(--secondary);
-            font-weight: bold;
-        }
-        .badge {
-            background-color: var(--light);
-            color: var(--primary);
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 0.3rem;
-        }
-        .project-title {
-            font-weight: bold;
-            color: var(--dark);
-        }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-            color: #6b7280;
-        }
-    </style>
+    <title>Ren Quispe | CV Profesional</title>
+    <link rel="stylesheet" href="css/styles-new.css">
 </head>
 <body>
 
     <header>
-        <h1>M.Sc. Romel Percy Melgarejo Bolivar</h1>
-        <p>Docente Universitario | Especialista en TI e Ingeniería Estadística e Informática</p>
+        <div class="header-content">
+            <div class="profile-section">
+                <img src="images/profile.jpg" alt="Foto de Perfil" class="profile-img">
+                <div class="header-text">
+                    <h1>Renato Quispe Vargas</h1>
+                    <p class="subtitle">Ingeniero Estadístico e Informático</p>
+                    <p class="tagline">🔬 Machine Learning • 📊 Data Science • 🔗 Sistemas Distribuidos</p>
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <a href="mailto:tu@email.com" class="contact-item">
+                    <span class="icon">✉️</span>
+                    <span>tu@email.com</span>
+                </a>
+                <a href="https://github.com/tuusername" class="contact-item" target="_blank">
+                    <span class="icon">🐙</span>
+                    <span>GitHub</span>
+                </a>
+                <span class="contact-item">
+                    <span class="icon">📍</span>
+                    <span>Puno, Perú</span>
+                </span>
+                <a href="https://linkedin.com/in/tuusername" class="contact-item" target="_blank">
+                    <span class="icon">💼</span>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
     </header>
 
     <div class="container">
         
-        <section id="sobre-mi">
-            <h2>Resumen Profesional</h2>
-            <p>Magíster Scientiae en Informática con mención en Gerencia de Tecnologías de Información y Comunicaciones por la Universidad Nacional del Altiplano. Profesional especializado en Ciencia de Datos, redes telemáticas y desarrollo de software con registro de patentes de propiedad intelectual ante INDECOPI.</p>
+        <!-- Resumen Profesional -->
+        <section id="sobre-mi" class="section">
+            <div class="section-header">
+                <h2>📝 Sobre Mí</h2>
+            </div>
+            <p class="intro-text">
+                Estudiante de Ingeniería Estadística e Informática en la Universidad Nacional del Altiplano (UNA Puno), con especialización en Machine Learning, análisis de series temporales y sistemas distribuidos. Experiencia práctica en implementación de modelos predictivos, análisis de datos con HPC y desarrollo de soluciones innovadoras para problemas reales de impacto social.
+            </p>
         </section>
 
-        <section id="educacion">
-            <h2>Formación Académica</h2>
-            <ul>
-                <li>
-                    <strong>Magíster Scientiae en Informática</strong><br>
-                    Mención en Gerencia de Tecnologías de Información y Comunicaciones — Universidad Nacional del Altiplano
-                </li>
-                <li>
-                    <strong>Ingeniero Estadístico e Informático</strong><br>
-                    Título Profesional — Universidad Nacional del Altiplano
-                </li>
-            </ul>
+        <!-- Educación -->
+        <section id="educacion" class="section">
+            <div class="section-header">
+                <h2>🎓 Educación</h2>
+            </div>
+            <div class="education-item">
+                <div class="education-header">
+                    <h3>Licenciatura en Ingeniería Estadística e Informática</h3>
+                    <span class="date-badge">En curso</span>
+                </div>
+                <p class="institution">Universidad Nacional del Altiplano (UNA Puno)</p>
+                <p class="description">Facultad de Ingeniería Estadística e Informática. Miembro activo del grupo de investigación LaCima especializado en análisis de datos y machine learning.</p>
+                <div class="highlights">
+                    <span class="highlight-tag">Machine Learning</span>
+                    <span class="highlight-tag">Time Series Analysis</span>
+                    <span class="highlight-tag">Distributed Systems</span>
+                    <span class="highlight-tag">Data Science</span>
+                </div>
+            </div>
         </section>
 
-        <section id="experiencia">
-            <h2>Experiencia Destacada</h2>
-            <ul>
-                <li>
-                    <strong>Docente Universitario</strong> — Universidad Nacional del Altiplano Puno<br>
-                    <span class="badge">2020 - Actualidad</span>
-                </li>
-                <li>
-                    <strong>Presidente del Capítulo de Ingenieros Estadísticos e Informáticos</strong> — Colegio de Ingenieros del Perú (CD Puno)<br>
-                    <span class="badge">2022 - Actualidad</span>
-                </li>
-                <li>
-                    <strong>Docente Auxiliar Ordinario</strong> — Universidad Nacional de Moquegua
-                </li>
-            </ul>
+        <!-- Experiencia Destacada -->
+        <section id="experiencia" class="section">
+            <div class="section-header">
+                <h2>💼 Experiencia Destacada</h2>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Predicción de Runtime en Supercomputadoras</h3>
+                    <span class="date-badge">2026</span>
+                </div>
+                <p class="role">Investigación Académica | Artículo Científico</p>
+                <p class="description">
+                    Artículo científico sobre optimización de energía y predicción de runtime de trabajos en supercomputadoras usando Machine Learning. Publicado en revista científica <strong>Informatica</strong> (informatica.si) con co-autores y análisis de datos reales del supercomputador NREL Eagle.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Machine Learning</span>
+                    <span class="tech-badge">HPC</span>
+                    <span class="tech-badge">Energy Optimization</span>
+                    <span class="tech-badge">NREL Eagle</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Modelado de PM2.5 - Calidad del Aire en Puno</h3>
+                    <span class="date-badge">2026</span>
+                </div>
+                <p class="role">Tesis | Series Temporales SARIMA</p>
+                <p class="description">
+                    Análisis completo de series temporales para predicción de contaminación atmosférica en Puno usando modelos SARIMA. Incluye análisis estacional, descomposición de series y validación con 112 observaciones (Enero 2017 - Abril 2026).
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-badge">SARIMA</span>
+                    <span class="tech-badge">Time Series</span>
+                    <span class="tech-badge">Minitab</span>
+                    <span class="tech-badge">Statistical Analysis</span>
+                    <span class="tech-badge">EViews</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Diseño de Red Campus y Administración</h3>
+                    <span class="date-badge">2025-2026</span>
+                </div>
+                <p class="role">Proyecto de Infraestructura | Network Administration</p>
+                <p class="description">
+                    Diseño completo de red campus para zona de Caltech. 894 puntos de conexión catalogados, documentación TIA/EIA-606 completa, configuración de switches Dell PowerConnect 2824, diseño de cableado estructurado y planing de racks.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-badge">Network Design</span>
+                    <span class="tech-badge">Structured Cabling</span>
+                    <span class="tech-badge">TIA/EIA-606</span>
+                    <span class="tech-badge">Dell Networking</span>
+                    <span class="tech-badge">Network Planning</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Sistema de Chat Distribuido - Topología de Anillo</h3>
+                    <span class="date-badge">2026</span>
+                </div>
+                <p class="role">Sistemas Distribuidos | Backend + Frontend</p>
+                <p class="description">
+                    Aplicación completa de chat en topología de anillo con sistema democrático de votación para elección de líder. Backend en Go con comunicación P2P, frontend web con WebSockets y SSE, GUI interactivo.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-badge">Go</span>
+                    <span class="tech-badge">WebSockets</span>
+                    <span class="tech-badge">Distributed Systems</span>
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">SSE</span>
+                </div>
+            </div>
         </section>
 
-        <section id="propiedad-intelectual">
-            <h2>Software y Propiedad Intelectual (INDECOPI)</h2>
-            <ul>
-                <li>
-                    <span class="project-title">Criptologin</span> — Módulo integrable de validación de usuarios mediante token USB DNI electrónico (Reg. 31152022).
-                </li>
-                <li>
-                    <span class="project-title">Enviromaker</span> — Software de procesamiento y generación de ambientes tridimensionales (Reg. 31132022).
-                </li>
-                <li>
-                    <span class="project-title">GLPAK GUI</span> — Interfaz gráfica para renderizado 3D en ventanas Win GDI+ (Reg. 31122022).
-                </li>
-                <li>
-                    <span class="project-title">Plataforma de Certificación Electrónica</span> — Derecho de autor por software (Reg. 1382017).
-                </li>
-            </ul>
+        <!-- Habilidades -->
+        <section id="habilidades" class="section">
+            <div class="section-header">
+                <h2>⚡ Habilidades Técnicas</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <ul class="skill-list">
+                        <li>XGBoost</li>
+                        <li>SVR (Support Vector Regression)</li>
+                        <li>Neural Networks</li>
+                        <li>Regression Trees</li>
+                        <li>Classification Models</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Series Temporales</h3>
+                    <ul class="skill-list">
+                        <li>SARIMA / ARIMA</li>
+                        <li>Box-Jenkins</li>
+                        <li>Minitab</li>
+                        <li>EViews</li>
+                        <li>Forecasting</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Lenguajes de Programación</h3>
+                    <ul class="skill-list">
+                        <li>Python 3.11+</li>
+                        <li>Go</li>
+                        <li>SQL</li>
+                        <li>LaTeX</li>
+                        <li>JavaScript/HTML/CSS</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Ciencia de Datos</h3>
+                    <ul class="skill-list">
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                        <li>Scikit-learn</li>
+                        <li>Jupyter Notebooks</li>
+                        <li>Data Visualization</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Infraestructura</h3>
+                    <ul class="skill-list">
+                        <li>Network Design</li>
+                        <li>Linux Administration</li>
+                        <li>Windows Administration</li>
+                        <li>HPC Systems</li>
+                        <li>Cloud Computing</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Herramientas y Frameworks</h3>
+                    <ul class="skill-list">
+                        <li>Git / GitHub</li>
+                        <li>VS Code</li>
+                        <li>Docker</li>
+                        <li>Django / Flask</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section id="investigacion">
-            <h2>Producción Científica</h2>
-            <ul>
-                <li>
-                    <strong>Capítulo de Libro (2023):</strong> "Predicción de diabetes en mujeres mediante un modelo probabilístico basado en Redes Bayesianas" en <em>O Cuidado em Saúde Baseado em Evidências</em>.
-                </li>
-                <li>
-                    <strong>Artículo de Revista (2022):</strong> "Arquitectura pervasiva con tecnologías WebRTC híbridas para el desarrollo de un framework Modelo Vista Controlador de tiempo real".
-                </li>
-            </ul>
+        <!-- Proyectos -->
+        <section id="proyectos" class="section">
+            <div class="section-header">
+                <h2>🚀 Proyectos Destacados</h2>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">🔬</div>
+                    <h3>QotaIA</h3>
+                    <p class="project-date">IntelliTechHack 2026</p>
+                    <p class="project-description">
+                        Detección de eutrofización en el Lago Titicaca usando imágenes Sentinel-2 e IA. Análisis de datos satelitales para monitoreo ambiental.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge-small">Satellite Imagery</span>
+                        <span class="tech-badge-small">ML</span>
+                        <span class="tech-badge-small">Sentinel-2</span>
+                        <span class="tech-badge-small">Python</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">⚖️</div>
+                    <h3>MiningTech</h3>
+                    <p class="project-date">TECH WEEKEND BOOTCAMP 2026</p>
+                    <p class="project-description">
+                        Plataforma de mediación de conflictos en minería de Ananea. Participación con equipo DataNova para solución de disputas laborales.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge-small">Web App</span>
+                        <span class="tech-badge-small">Conflict Resolution</span>
+                        <span class="tech-badge-small">Django</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🌾</div>
+                    <h3>MinkApp</h3>
+                    <p class="project-date">INCUNALAB Pre-incubación</p>
+                    <p class="project-description">
+                        Marketplace de superfoods que conecta productores de Puno con compradores de la ciudad. E-commerce con enfoque local.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge-small">E-commerce</span>
+                        <span class="tech-badge-small">Django</span>
+                        <span class="tech-badge-small">React</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">💬</div>
+                    <h3>Chat Distribuido</h3>
+                    <p class="project-date">2026</p>
+                    <p class="project-description">
+                        Sistema de chat en topología de anillo con elección democrática de líder. Frontend web con WebSockets y backend en Go.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge-small">Go</span>
+                        <span class="tech-badge-small">WebSockets</span>
+                        <span class="tech-badge-small">React</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🎨</div>
+                    <h3>LaCima Brand Identity</h3>
+                    <p class="project-date">2026</p>
+                    <p class="project-description">
+                        Sistema completo de branding para grupo de investigación LaCima. Logo con elementos Andinos (Amaru, khipu) integrados.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge-small">Design</span>
+                        <span class="tech-badge-small">Branding</span>
+                        <span class="tech-badge-small">Andean Culture</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🗳️</div>
+                    <h3>Predicción Electoral</h3>
+                    <p class="project-date">2026</p>
+                    <p class="project-description">
+                        Modelo ML para predicción de resultados en segunda vuelta presidencial Perú 2026. Análisis de tendencias electorales.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge-small">ML</span>
+                        <span class="tech-badge-small">Python</span>
+                        <span class="tech-badge-small">Prediction</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publicaciones -->
+        <section id="publicaciones" class="section">
+            <div class="section-header">
+                <h2>📚 Publicaciones y Artículos</h2>
+            </div>
+            
+            <div class="publication-item">
+                <h3>Predicción de Runtime y Optimización de Energía en Supercomputadoras</h3>
+                <p class="publication-details">
+                    <strong>Revista:</strong> Informatica (informatica.si)<br>
+                    <strong>Año:</strong> 2026<br>
+                    <strong>Co-autores:</strong> Briggitte Jhosselyn Vilca Chambilla, Fred Torres Cruz<br>
+                    <strong>Tema:</strong> Aplicación de Machine Learning para predicción de tiempos de ejecución y optimización energética en HPC
+                </p>
+            </div>
         </section>
 
     </div>
 
     <footer>
-        <p>&copy; 2026 Romel Percy Melgarejo Bolivar. Desarrollado y alojado con GitHub Pages.</p>
+        <p>© 2026 Renato Quispe Vargas | Estudiante de Ingeniería Estadística e Informática | UNA Puno</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Desarrollado con HTML, CSS y JavaScript | Alojado en GitHub Pages</p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
